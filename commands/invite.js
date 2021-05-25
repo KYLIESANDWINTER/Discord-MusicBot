@@ -22,15 +22,10 @@ module.exports = {
         "Invite " + client.user.tag + " to your server!",
         client.user.displayAvatarURL()
       )
-      .setColor("BLUE")
+      .setColor("FF98E0")
       .setDescription(
-        `You can invite me by clicking [here](https://discord.com/oauth2/authorize?client_id=${
-          client.config.ClientID
-        }&permissions=${
-          client.config.Permissions
-        }&scope=bot%20${client.config.Scopes.join("%20")}&redirect_url=${
-          client.config.Website
-        }${client.config.CallbackURL}&response_type=code)`
+        `• [Click Here To Invite Me](https://discord.com/api/oauth2/authorize?client_id=843749085457940510&permissions=8&scope=bot)
+• [Click Here To Join My Support Server](https://discord.gg/3MVMpZDmnE)`
       );
     message.channel.send(embed);
   },
