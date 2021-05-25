@@ -19,8 +19,8 @@ module.exports = {
   run: async (client, message, args, { GuildDB }) => {
     let embed = new MessageEmbed()
       .setAuthor(
-        "Invite " + client.user.tag + " to your server!",
-        client.user.displayAvatarURL()
+        "Thanks For Choosing Me",
+        https://cdn.discordapp.com/emojis/846803912840314922.gif?size=2048
       )
       .setColor("FF98E0")
       .setDescription(
@@ -40,20 +40,15 @@ module.exports = {
   run: async (client, interaction, args, { GuildDB }) => {
     let embed = new MessageEmbed()
       .setAuthor(
-        "Invite " + client.user.tag + " to your server!",
-        client.user.displayAvatarURL()
+        "Thanks For Choosing Me",
+        https://cdn.discordapp.com/emojis/846803912840314922.gif?size=2048
       )
-      .setColor("BLUE")
+      .setColor("FF98E0")
       .setDescription(
-        `You can invite me by clicking [here](https://discord.com/oauth2/authorize?client_id=${
-          client.config.ClientID
-        }&permissions=${
-          client.config.Permissions
-        }&scope=bot%20${client.config.Scopes.join("%20")}&redirect_url=${
-          client.config.Website
-        }${client.config.CallbackURL}&response_type=code)`
+        `• [Click Here To Invite Me](https://discord.com/api/oauth2/authorize?client_id=843749085457940510&permissions=8&scope=bot)
+• [Click Here To Join My Support Server](https://discord.gg/3MVMpZDmnE)`
       );
-    interaction.send(embed);
+    message.channel.send(embed);
   },
   },
 };
