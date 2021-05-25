@@ -20,7 +20,7 @@ module.exports = {
     let embed = new MessageEmbed()
       .setAuthor(
         "Thanks For Choosing Me",
-        https://cdn.discordapp.com/emojis/846803912840314922.gif?size=2048
+        "https://cdn.discordapp.com/emojis/846803912840314922.gif?size=2048"
       )
       .setColor("FF98E0")
       .setDescription(
@@ -41,7 +41,7 @@ module.exports = {
     let embed = new MessageEmbed()
       .setAuthor(
         "Thanks For Choosing Me",
-        https://cdn.discordapp.com/emojis/846803912840314922.gif?size=2048
+        "https://cdn.discordapp.com/emojis/846803912840314922.gif?size=2048"
       )
       .setColor("FF98E0")
       .setDescription(
